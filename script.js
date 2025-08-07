@@ -6,8 +6,8 @@ let timeLeft = timerTime;
 const intervalId = setInterval(function () {
 	timeLeft--;
 
-	let minutes = Math.floor(timeLeft / 60);
-	let seconds = timeLeft % 60;
+	const minutes = Math.floor(timeLeft / 60);
+	const seconds = timeLeft % 60;
 
 	timerEl.textContent = String(minutes).padStart(2, '0') + ':' + String(seconds).padStart(2, '0');
 
